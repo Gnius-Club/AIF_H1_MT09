@@ -1,24 +1,275 @@
-<!-- 
-HTML Template for Missions, delete and replace with mission HTML
--->
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Gnius Club</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Playbook — 1º Preparatoria — Misión M09 - Limitaciones de los LLMs</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-  <h1>
-    Playbook HTML Placeholder Template
-  </h1>
-  <p>
-    Replace with actual playbook code.
-  </p>
-  <script src="script.js"></script>
+<header>
+<h1><span class="book-icon">📋</span> <strong>Playbook Misión M09: Limitaciones de los LLMs</strong></h1>
+<div class="header-widgets">
+<div class="timer-container">
+<span id="timer">⏱️ 00:00</span>
+<button id="startStop">Start</button>
+<button id="reset">Reset</button>
+</div>
+<div class="theme-toggle">
+<i class="fas fa-sun"></i>
+<label class="switch">
+<input type="checkbox" id="theme-toggle-input">
+<span class="slider round"></span>
+</label>
+<i class="fas fa-moon"></i>
+</div>
+</div>
+</header>
+<div class="main-container">
+<aside class="activity-list">
+<h2>Actividades</h2>
+<ul>
+<li><a href="#activity-0">📝</a></li>
+<li><a href="#activity-1">1</a></li>
+<li><a href="#activity-2">2</a></li>
+<li><a href="#activity-3">3</a></li>
+<li><a href="#activity-4">4</a></li>
+<li><a href="#activity-5">5</a></li>
+</ul>
+<div class="sidebar-info">
+<p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+<p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+</div>
+</aside>
+<main class="content">
+<div class="progress-bar">
+<div class="progress"></div>
+</div>
+<button id="toggle-dialogues">Mostrar todos los diálogos</button>
+<section class="activity-card" id="activity-0">
+<h2 class="activity-title">📝 De un Vistazo: Misión M09 - Limitaciones de los LLMs</h2>
+<p class="activity-purpose">Resumen de objetivos, secuencia y entregables de la sesión.</p>
+<div class="overview">
+<section class="overview-block">
+<h3>Objetivos e “I Can”</h3>
+<ul>
+<li>Puedo identificar y analizar las limitaciones de los LLMs, como alucinaciones y sesgos.</li>
+<li>Puedo aplicar estrategias (búsqueda en tiempo real, citación de fuentes) para mitigar los efectos de alucinaciones y sesgos en la investigación.</li>
+</ul>
+</section>
+<section class="overview-block">
+<h3>Secuencia y tiempos</h3>
+<ol>
+<li>Saludo Interactivo con IA — 3 min</li>
+<li>“I Can” + Desafío — 5–7 min</li>
+<li>AI GYM — 10–12 min</li>
+<li>Brain Spark — 17–20 min</li>
+<li>GNIUS STORM — 5 min</li>
+</ol>
+</section>
+<section class="overview-block">
+<h3>Entregable del Micro-Proyecto</h3>
+<ul>
+<li>Infografía, artículo de opinión o guía para detectar fuentes sesgadas.</li>
+</ul>
+</section>
+<section class="overview-block">
+<h3>Criterios de calidad</h3>
+<ul>
+<li>Identificación clara de alucinaciones o sesgos en respuestas de LLMs.</li>
+<li>Comparación crítica y fundamentada entre fuentes (LLM vs. Perplexity AI).</li>
+<li>Propuesta de estrategias efectivas para mitigar sesgos y alucinaciones.</li>
+<li>Claridad y coherencia en la presentación del entregable final.</li>
+</ul>
+</section>
+<section class="overview-block">
+<h3>Materiales y preparación</h3>
+<ul>
+<li>Proyector e internet</li>
+<li>Acceso a LLM (ej. ChatGPT, Gemini, Copilot) y Perplexity AI</li>
+<li>Plantilla de ejemplo para infografía/artículo/guía</li>
+</ul>
+</section>
+</div>
+</section>
+<section class="activity-card" id="activity-1">
+<h2 class="activity-title">Saludo Interactivo con IA</h2>
+<p class="activity-purpose">Establecer tono profesional, conectar con el tema y activar a Xolo con perfil e intereses.</p>
+<div class="steps">
+<article class="step-card">
+<div class="step-content">
+<h3 class="step-title">Paso 1 — Bienvenida y foco</h3>
+<p class="step-instructions">Proyectar Diapositiva 2. Enuncia el foco conceptual de la sesión y su relevancia profesional.</p>
+</div>
+<div class="collapsible">
+<button type="button" class="collapsible-button">Diálogo Sugerido</button>
+<div class="collapsible-content">
+<p class="dialogue assistant">Equipo: hoy abordaremos un aspecto crítico de la inteligencia artificial: las limitaciones de los Grandes Modelos de Lenguaje, específicamente las alucinaciones y los sesgos. Comprender esto es fundamental para cualquier profesional que utilice IA como herramienta de investigación o apoyo en la toma de decisiones, garantizando la fiabilidad de la información.</p>
+</div>
+</div>
+</article>
+<article class="step-card">
+<div class="step-content">
+<h3 class="step-title">Paso 2 — Activación con Xolo</h3>
+<p class="step-instructions">Cada estudiante abre su chat con Xolo y envía un saludo con perfil de aprendizaje e intereses, haciendo referencia a la misión actual.</p>
+</div>
+<div class="collapsible">
+<button type="button" class="collapsible-button">Diálogo Sugerido</button>
+<div class="collapsible-content">
+<p class="dialogue assistant">Activen a Xolo con su perfil e intereses. Un mensaje como: "Hola Xolo, soy [Nombre], perfil [X]; me interesa [Y]. Estoy en la Misión M09: Limitaciones de los LLMs." Asegúrense de que Xolo confirme su activación y esté listo para asistirles.</p>
+</div>
+</div>
+</article>
+</div>
+</section>
+<section class="activity-card" id="activity-2">
+<h2 class="activity-title">“I Can Statement” + Desafío</h2>
+<p class="activity-purpose">Explicitar metas y presentar el reto que guiará la producción.</p>
+<div class="steps">
+<article class="step-card">
+<div class="step-content">
+<h3 class="step-title">Paso 1 — Presentación del reto</h3>
+<p class="step-instructions">Proyectar Diapositiva 3. Define qué se logrará hoy, centrándose en el "Duelo de Investigadores".</p>
+</div>
+<div class="collapsible">
+<button type="button" class="collapsible-button">Diálogo Sugerido</button>
+<div class="collapsible-content">
+<p class="dialogue assistant">El reto de hoy es un "Duelo de Investigadores". Realizarán la misma pregunta a un LLM creativo y a Perplexity AI. Su misión será comparar críticamente las respuestas, identificando alucinaciones o sesgos, y proponer estrategias para mitigarlos. El éxito se medirá por su capacidad de análisis crítico y la claridad de su entregable final.</p>
+</div>
+</div>
+</article>
+<article class="step-card">
+<div class="step-content">
+<h3 class="step-title">Paso 2 — Afirmación “I Can”</h3>
+<p class="step-instructions">Proyectar Diapositiva 4. Los estudiantes redactan su propio “I Can” alineado con el Micro-Proyecto.</p>
+</div>
+<div class="collapsible">
+<button type="button" class="collapsible-button">Diálogo Sugerido</button>
+<div class="collapsible-content">
+<p class="dialogue assistant">Es momento de definir su "I Can Statement" personal. En una frase, articulen lo que podrán lograr al final de esta misión. Por ejemplo: "Puedo identificar y analizar las limitaciones de los LLMs, como alucinaciones y sesgos, y aplicar estrategias para mitigar sus efectos en la investigación." Tómense un minuto para redactar el suyo.</p>
+</div>
+</div>
+</article>
+</div>
+</section>
+<section class="activity-card" id="activity-3">
+<h2 class="activity-title">AI GYM</h2>
+<p class="activity-purpose">Formalizar criterios y/o framework para abordar alucinaciones y sesgos.</p>
+<div class="steps">
+<article class="step-card">
+<div class="step-content">
+<h3 class="step-title">Paso 1 — Marco del día: Abordaje de alucinaciones y sesgos</h3>
+<p class="step-instructions">Proyectar Diapositiva 5. Introduce el concepto de alucinaciones y sesgos, y cómo la búsqueda en tiempo real y la citación de fuentes (con Perplexity AI) actúan como antídotos.</p>
+</div>
+<div class="collapsible">
+<button type="button" class="collapsible-button">Diálogo Sugerido</button>
+<div class="collapsible-content">
+<p class="dialogue assistant">Hoy, en el AI GYM, nos enfocaremos en cómo abordar las alucinaciones y los sesgos en los LLMs. Una alucinación es cuando un modelo genera información falsa o sin fundamento. El sesgo algorítmico, por su parte, refleja prejuicios presentes en los datos de entrenamiento. Para contrarrestarlos, utilizaremos la búsqueda en tiempo real y la citación de fuentes, como las que ofrece Perplexity AI. Esto agrega valor al permitirnos verificar la información. Eviten la confianza ciega en la primera respuesta del LLM y la omisión de la verificación de fuentes. Usen la citación y el contraste de información para validar sus hallazgos.</p>
+</div>
+</div>
+</article>
+<article class="step-card">
+<div class="step-content">
+<h3 class="step-title">Paso 2 — Mini-demostración: Comparación de respuestas</h3>
+<p class="step-instructions">Proyectar Diapositiva 6. Construye en vivo un ejemplo mínimo de una pregunta a un LLM y a Perplexity AI, destacando una posible alucinación o sesgo.</p>
+</div>
+<div class="collapsible">
+<button type="button" class="collapsible-button">Diálogo Sugerido</button>
+<div class="collapsible-content">
+<p class="dialogue assistant">Observen este ejemplo: preguntaré sobre [tema específico] a un LLM y luego a Perplexity AI. Noten cómo el LLM puede [ejemplo de alucinación/sesgo], mientras que Perplexity AI [ejemplo de citación/verificación]. ¿Identifican la diferencia en la fiabilidad? ¿Cómo pueden verificar la información que un LLM les proporciona?</p>
+</div>
+</div>
+</article>
+<article class="step-card">
+<div class="step-content">
+<h3 class="step-title">Paso 3 — Check rápido</h3>
+<p class="step-instructions">Proyectar Diapositiva 7. 2 ítems de verificación sobre alucinaciones/sesgos y la importancia de la verificación.</p>
+</div>
+<div class="collapsible">
+<button type="button" class="collapsible-button">Diálogo Sugerido</button>
+<div class="collapsible-content">
+<p class="dialogue assistant">Pregunta 1: ¿Una "alucinación" de un LLM es siempre una mentira intencional? (Sí/No). Pregunta 2: ¿Cuál es el propósito principal de usar una herramienta como Perplexity AI en esta misión? (Verificar fuentes/Generar texto creativo).</p>
+</div>
+</div>
+</article>
+</div>
+</section>
+<section class="activity-card" id="activity-4">
+<h2 class="activity-title">Brain Spark</h2>
+<p class="activity-purpose">Producir el entregable tangible del Micro-Proyecto aplicando el marco del AI GYM.</p>
+<div class="steps">
+<article class="step-card">
+<div class="step-content">
+<h3 class="step-title">Paso 1 — Producción: El Duelo de Investigadores</h3>
+<p class="step-instructions">Proyectar Diapositiva 8. Indica el proceso: haz la misma pregunta a un LLM creativo y a Perplexity AI. Realiza la comparación crítica de las fuentes y su sesgo. Tiempo de trabajo autónomo.</p>
+</div>
+<div class="collapsible">
+<button type="button" class="collapsible-button">Diálogo Sugerido</button>
+<div class="collapsible-content">
+<p class="dialogue assistant">N/A</p>
+</div>
+</div>
+</article>
+<article class="step-card">
+<div class="step-content">
+<h3 class="step-title">Paso 2 — Iteración y mejora: Refinando el análisis</h3>
+<p class="step-instructions">Proyectar Diapositiva 9. Refina la comparación, añadiendo más evidencia o justificando el análisis de sesgos. Considera cómo presentarías tus hallazgos en una infografía, artículo de opinión o guía.</p>
+</div>
+<div class="collapsible">
+<button type="button" class="collapsible-button">Diálogo Sugerido</button>
+<div class="collapsible-content">
+<p class="dialogue assistant">Antes de cerrar: valida si tu análisis es crítico y si has identificado claramente alucinaciones o sesgos. ¿Tu propuesta de mitigación es práctica? Si no, ajusta y vuelve a probar tu enfoque. Asegúrate de que tu entregable final sea claro y convincente.</p>
+</div>
+</div>
+</article>
+<article class="step-card">
+<div class="step-content">
+<h3 class="step-title">Paso 3 — Evidencia de resultado</h3>
+<p class="step-instructions">Proyectar Diapositiva 10. Solicita el entregable final: infografía, artículo de opinión o guía para detectar fuentes sesgadas.</p>
+</div>
+<div class="collapsible">
+<button type="button" class="collapsible-button">Diálogo Sugerido</button>
+<div class="collapsible-content">
+<p class="dialogue assistant">Suban su infografía, artículo de opinión o guía al canal indicado. Nombren su archivo: M09_DueloInvestigadores_[SuNombre/Equipo]. Asegúrense de que el entregable refleje su análisis crítico y las estrategias aprendidas.</p>
+</div>
+</div>
+</article>
+</div>
+</section>
+<section class="activity-card" id="activity-5">
+<h2 class="activity-title">GNIUS STORM</h2>
+<p class="activity-purpose">Exhibición breve, síntesis y conexión profesional.</p>
+<div class="steps">
+<article class="step-card">
+<div class="step-content">
+<h3 class="step-title">Paso 1 — Showcase relámpago</h3>
+<p class="step-instructions">2–3 equipos/personas muestran evidencia clave de su "Duelo de Investigadores" (30–45 s c/u).</p>
+</div>
+<div class="collapsible">
+<button type="button" class="collapsible-button">Diálogo Sugerido</button>
+<div class="collapsible-content">
+<p class="dialogue assistant">Describan su hallazgo más relevante en 30 segundos: ¿qué alucinación o sesgo identificaron y cómo lo contrastaron? ¿Qué estrategia de mitigación les resultó más efectiva?</p>
+</div>
+</div>
+</article>
+<article class="step-card">
+<div class="step-content">
+<h3 class="step-title">Paso 2 — Cierre ejecutivo</h3>
+<p class="step-instructions">Proyectar Diapositiva 11. Redacta síntesis con: (a) 1 aprendizaje clave, (b) 1 criterio de calidad que marcó la diferencia, (c) siguiente paso aplicable fuera del aula.</p>
+</div>
+<div class="collapsible">
+<button type="button" class="collapsible-button">Diálogo Sugerido</button>
+<div class="collapsible-content">
+<p class="dialogue assistant">Síntesis de la misión: el aprendizaje clave es que la IA es una herramienta poderosa, pero requiere un ojo crítico y verificación constante. El criterio de calidad que marcó la diferencia hoy fue la capacidad de contrastar información de múltiples fuentes. Como siguiente paso, apliquen esta mentalidad de "Duelo de Investigadores" a cualquier información que consuman, sea generada por IA o no. La alfabetización crítica es una habilidad profesional indispensable.</p>
+</div>
+</div>
+</article>
+</div>
+</section>
+</main>
+</div>
+<script src="script.js"></script>
 </body>
-
 </html>
