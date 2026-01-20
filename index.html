@@ -17,18 +17,28 @@
                 <button id="global-start-stop">Start</button>
                 <button id="global-reset">Reset</button>
             </div>
+            <!-- Estructura del Theme Toggle agregada -->
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
         </div>
     </header>
     <div class="main-container">
         <aside class="activity-list">
             <h2>Actividades</h2>
             <ul>
-                <li><a href="#activity-0">📝 De un Vistazo</a></li>
-                <li><a href="#activity-1">1. Intro</a></li>
-                <li><a href="#activity-2">2. A.I. Gym</a></li>
-                <li><a href="#activity-3">3. Brain Spark</a></li>
-                <li><a href="#activity-4">4. Gnius STORM</a></li>
-                <li><a href="#activity-5">5. Evidencias</a></li>
+                <!-- Formato de lista ajustado -->
+                <li><a href="#activity-0">📝</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+                <li><a href="#activity-5">5</a></li>
             </ul>
         </aside>
         <main class="content">
@@ -49,8 +59,12 @@
                 <div class="command-section xolo-prompt">
                     <h3>🤖 Prompt de Referencia para XOLO (Solo para Maestro)</h3>
                     <div class="prompt-box">
+                        <!-- Estructura de botón de copiado agregada -->
                         <div class="prompt-header">
                             <span class="prompt-label">⚠️ NOTA: XOLO ya conoce el tema de esta misión. Este prompt es SOLO de referencia en caso de emergencia técnica:</span>
+                            <button class="copy-btn" onclick="copyPrompt('main-prompt')">
+                                <i class="fas fa-copy"></i> Copiar
+                            </button>
                         </div>
                         <pre id="main-prompt">Explícame la diferencia entre alucinación (información inventada o incorrecta) y sesgo (tendencia por datos, diseño o fuentes). Analicemos por qué pedir “fuentes” ayuda, pero no es suficiente si la fuente está sesgada. Guíame a construir un mini-checklist: (1) ¿hay cita?, (2) ¿qué tipo de fuente es?, (3) ¿qué interés podría tener?, (4) ¿qué otra fuente lo confirma o lo contradice?</pre>
                     </div>
@@ -156,6 +170,8 @@
                     <h2>🚀 Actividad 1: Intro a la Misión</h2>
                     <div class="activity-timer">
                         <span class="activity-duration">⏱️ 2:00</span>
+                        <!-- Botón de timer agregado -->
+                        <button class="timer-start-btn" data-duration="120">Iniciar</button>
                     </div>
                 </div>
                 <div class="roles-section">
@@ -200,6 +216,8 @@
                     <h2>🧠 Actividad 2: A.I. Gym</h2>
                     <div class="activity-timer">
                         <span class="activity-duration">⏱️ 8:00</span>
+                        <!-- Botón de timer agregado -->
+                        <button class="timer-start-btn" data-duration="480">Iniciar</button>
                     </div>
                 </div>
                 <div class="roles-section">
@@ -245,6 +263,7 @@
                 </div>
                 
                 <div class="optional-script">
+                    <!-- Javascript inline eliminado -->
                     <button class="collapsible-button">📖 Ver guion detallado (opcional)</button>
                     <div class="collapsible-content">
                         <p class="dialogue assistant">¡Hola a todos! Ahora vamos a aprender algo fundamental para el siglo XXI. Abran su chat con XOLO y denle un saludo. XOLO ya los conoce y sabe exactamente qué les va a enseñar hoy. No necesitan escribir un prompt especial, solo empiecen a platicar con él. Vamos a descubrir la diferencia entre cuando una IA inventa cosas y cuando tiene preferencias ocultas. Pónganle mucha atención a cómo XOLO les explica el mini-checklist para verificar fuentes. ¡Pregúntenle todo lo que no les quede claro!</p>
@@ -257,6 +276,8 @@
                     <h2>💡 Actividad 3: Brain Spark</h2>
                     <div class="activity-timer">
                         <span class="activity-duration">⏱️ 20:00</span>
+                        <!-- Botón de timer agregado -->
+                        <button class="timer-start-btn" data-duration="1200">Iniciar</button>
                     </div>
                 </div>
                 <div class="roles-section">
@@ -306,6 +327,7 @@
                     </div>
                 </div>
                 <div class="optional-script">
+                    <!-- Javascript inline eliminado -->
                     <button class="collapsible-button">📖 Ver guion detallado (opcional)</button>
                     <div class="collapsible-content">
                         <p class="dialogue assistant">¡Es hora de crear y poner a prueba a las máquinas! Vamos a realizar un 'Duelo de Investigadores'. Primero, ideen con XOLO una pregunta compleja, algo que no tenga una respuesta simple de sí o no. Luego, usen el VIBE que XOLO les sugiera para comparar un LLM como ChatGPT con Perplexity. Sigan el GCS que XOLO les dará para estructurar su comparación. Por ejemplo, podrían investigar sobre el impacto de una nueva tecnología o un evento histórico reciente. No olviden usar las preguntas de experimentación para evaluar lo que encuentren. Si tienen errores o dudas, pregúntenle a XOLO, él los ayudará a depurar su análisis.</p>
@@ -325,6 +347,8 @@
                     <h2>⚡ Actividad 4: Gnius STORM - Compartir y Reflexionar</h2>
                     <div class="activity-timer">
                         <span class="activity-duration">⏱️ 5:00</span>
+                        <!-- Botón de timer agregado -->
+                        <button class="timer-start-btn" data-duration="300">Iniciar</button>
                     </div>
                 </div>
                 <div class="roles-section">
@@ -379,6 +403,8 @@
                     <h2>✅ Actividad 5: Entrega de Evidencias</h2>
                     <div class="activity-timer">
                         <span class="activity-duration">⏱️ 5:00</span>
+                        <!-- Botón de timer agregado -->
+                        <button class="timer-start-btn" data-duration="300">Iniciar</button>
                     </div>
                 </div>
                 <div class="roles-section">
@@ -424,4 +450,4 @@
     </div>
         <script src="script.js"></script>
 </body>
-</html></html>
+</html>
